@@ -1,0 +1,53 @@
+# Valentyn Bondaruk
+
+# Front-end Developer (Angular 2+) 
+
+## Profile
+I am Angular 2+ ninja from Ukraine with 2+ years in world of webpages.
+During this time I have been working with Angular 
+## Experience
+
+
+## Projects
+
+* My first test project. I used technologies such as HTML5,
+CSS3, Bootstrap, Less, jQuery. To make a carousel, I used
+slick.js. I took the layout and tried to make the site itself
+to demonstrate my skills. This project is fully responsible.
+https://bondval.000webhostapp.com/
+* My first commercial project. I made this project for the
+customer from Upwork. I had a PSD layout and I had to
+make a fully responsive site in two weeks. I use
+technologies such as HTML5, CSS3, Bootstrap, Less,
+jQuery. To make a carousel, I used slick.js.
+thinktwice1.archahosting.com
+* I'm currently working on a project based on Angular 4.
+But he is still in development because of this I can not
+demonstrate it.
+
+
+
+## Education
+
+* 2015-present Vasylkivsky College of National aviation
+university, department: Software Development
+
+
+## Skils
+
+* html
+
+## Languages
+
+* English – Pre-intermediate
+* Ukrainian – native
+* Russian - native
+
+## Contact
+
+* valikfrontend@gmail.com
+* https://github.com/Bondval
+* https://www.linkedin.com/in/valentynbond/
+
+
+
