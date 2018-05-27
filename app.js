@@ -5,6 +5,7 @@ const md = Markdown.markdown.toHTML;
 import workText from 'raw-loader!./work.txt';
 import pgpText from 'raw-loader!./pgp.txt';
 import headerHTML from 'raw-loader!./header.html';
+import portfolioTeamplate from 'raw-loader!./portfolio-teamplate.html';
 let styleText = [0, 1, 2, 3].map(function(i) { return require('raw-loader!./styles' + i + '.css'); });
 import preStyles from 'raw-loader!./prestyles.css';
 import replaceURLs from './lib/replaceURLs';
@@ -189,7 +190,7 @@ function createEventHandlers() {
 function createWorkBox() {
   if (workEl.classList.contains('flipped')) return;
   workEl.innerHTML = '<div class="text">' + replaceURLs(workText) + '</div>' +
-                     '<div class="md">' + replaceURLs(md(workText)) + '<div>';
+                     portfolioTeamplate;
 
   workEl.classList.add('flipped');
   workEl.scrollTop = 9999;
