@@ -71,7 +71,7 @@ pre:not(:empty) {
  */
 
 #style-text {
-  -webkit-transform: translateX(95%);
+  -webkit-transform: translateX(0);
   position: absolute;
 }
 
