@@ -9,11 +9,45 @@
 
 /** сюда пиши стилі */
 
+#work-text {
+  line-height: 0.6;
+}
+
 .md .logo {
   background:green;
   width:100%;
 }
 
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .md ul, .md p {
+  margin: 0px;
+}
+
+header {
+  text-align: center;
+  background-image: url(img/background-logo.jpg);
+  background-size: cover;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 20px;
+}
+
+.info img {
+  text-align: center;
+  border-radius: 50%
+}
+
+.info-item_details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.info-item_details span{
+  text-align: right;
+}
 /**
  * That's better.
  *

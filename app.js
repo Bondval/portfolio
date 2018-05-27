@@ -189,8 +189,8 @@ function createEventHandlers() {
 //
 function createWorkBox() {
   if (workEl.classList.contains('flipped')) return;
-  workEl.innerHTML = '<div class="text">' + replaceURLs(workText) + '</div>' +
-                     portfolioTeamplate;
+  workEl.innerHTML = '<div class="text">' + replaceURLs(workText) + '</div>' + `${portfolioTeamplate}`;
+                     
 
   workEl.classList.add('flipped');
   workEl.scrollTop = 9999;
