@@ -18,18 +18,17 @@
 
 
 /**
- * Let's begin. We start by animating... well, everything.
+ * Add animation delay.
+ * That didn't do much. But you'll see.
  */
 
 * {
-  -webkit-transition: all 0s;
+  -webkit-transition: all 1s;
 }
 
 /**
- * That didn't do much. But you'll see.
- *
  * Black on white is really boring,
- * so let's do something about it.
+ * let's customize.
  */
 
 html {
@@ -49,7 +48,7 @@ pre,  a {
  *
  * Working in this big empty space is tough.
  *
- * I'm going to make a nice area for us to work in.
+ * The next step is the creation of a pleasant area for us to work with.
  */
 
 pre:not(:empty) {
@@ -68,7 +67,8 @@ pre:not(:empty) {
 
 /**
  * Okay. We're going to start filling up the screen.
- * Let's get ready to do some work.
+ * Let's move the screen to the right side
+ * to make it better.
  */
 
 #style-text {
@@ -77,8 +77,7 @@ pre:not(:empty) {
 }
 
 /**
- * This is good, but all the text is white!
- * Let's make it even more readable.
+ * This is nice, but let's make it even more readable.
  */
 
 .comment       { color: #857F6B; font-style: italic; }
@@ -90,12 +89,8 @@ pre:not(:empty) {
 
 /**
  * Now we're getting somewhere.
- * Time to get a little perspective.
+ * Time to create some style.
  */
-
-body {
-  -webkit-perspective: 1000px;
-}
 
 #style-text {
   -webkit-transform: translateX(98.5%) rotateY(-10deg);
@@ -103,10 +98,17 @@ body {
   max-height: 94.5%;
 }
 
-/**
- * So, let's talk projects. That's why you're here, right?
- * I can't imagine you'd come just to see the pretty colors.
+ body{
+  -webkit-perspective: 100px;
+ }
+
+ /**
+ * Oops
  */
+
+body {
+  -webkit-perspective: 1000px;
+}
 
 pre:not(#style-text) {
   -webkit-transform: rotateY(10deg);
