@@ -28,6 +28,7 @@ header {
   background-size: cover;
 }
 
+
 header h2 {
   border: 1px solid #333;
 }
@@ -107,6 +108,7 @@ header h2 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 /**
  * That's better.
  *
