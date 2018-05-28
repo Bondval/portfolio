@@ -9,13 +9,27 @@
 
 /** сюда пиши стилі */
 
+#work-text {
+  line-height: 0.6;
+}
+
 .md .logo {
   background:green;
   width:100%;
 }
 
-.header {
-  text-align: center
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .md ul, .md p {
+  margin: 0px;
+}
+
+header {
+  text-align: center;
+  background-image: url(img/background-logo.jpg);
+  background-size: cover;
+}
+
+header h2 {
+  border: 1px solid #333;
 }
 
 .content {
@@ -24,20 +38,75 @@
   grid-column-gap: 20px;
 }
 
+.info img {
+  text-align: center;
+  border-radius: 50%
+}
 
 .info-item_details {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
 
 .info-item_details span{
-  display: inline-block;
-  float: right;
+  text-align: right;
 }
 
-.info img {
-  border-radius: 50%;
+.profile-item {
+  line-height: 1.2;
 }
 
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */ 
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+
+/**
+ * 1. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 2. Scaling mirrors the circle to make the stroke move right
+ *    to mark a positive chart value.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+ */
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Layout styles only, not needed for functionality */
+
+.grid {
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 31em) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 /**
  * That's better.
  *
