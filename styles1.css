@@ -1,14 +1,18 @@
 
+
+
 /**
- * That markdown on the left doesn't look great. Let's render it.
+ * But this is not a professional resume,  
+ * doesn't look great. Let's render it.
  */
+
 #work-text{
-  opacity: 0.8;
-  background: #ccc;
+  background: rgba(255, 251, 251, 0.24);
+  white-space: normal;
 }
 
  #work-text.flipped {
-  -webkit-transform: rotateX(0deg) rotateY(190deg) rotateZ(180deg);
+  -webkit-transform: rotateX(0deg) rotateY(190deg) rotateZ(180deg) translateY(-2.5%);
 }
 
 #work-text .md {
@@ -18,14 +22,5 @@
 
 /**
  * Alright. We're ready.
- *
- * 3...
- * 2...
- * 1...
- *
- * .
- * ....faked you out.
- *
  * Okay here we go!
- *
  */

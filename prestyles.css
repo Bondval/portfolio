@@ -1,5 +1,3 @@
-/* I'm cheating a bit */
-
 html, body {
   margin-top: 0;
   height: 100%;
@@ -41,4 +39,8 @@ a:after {
 
 a:last-of-type:after {
   border: none;
+}
+
+.margin-top-min{
+  margin-top: 1em;
 }
