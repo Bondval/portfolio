@@ -42,3 +42,7 @@ a:after {
 a:last-of-type:after {
   border: none;
 }
+
+.margin-top-min{
+  margin-top: 1em;
+}

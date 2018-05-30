@@ -38,7 +38,7 @@ html {
  * Hold on...
  */
 
-pre,  a {
+.pre,  a {
   color: white;
 }
 
@@ -50,15 +50,16 @@ pre,  a {
  * The next step is the creation of a pleasant area for us to work with.
  */
 
-pre:not(:empty) {
+.pre {
   overflow: auto;
   background: rgb(48, 48, 48);
   border: 1px solid #ccc;
   max-height: 94.5%;
   width: 49%;
+  /* opacity: 0.8; */
   font-size: 14px;
   font-family: monospace;
-  padding: 10px 8px 20px;
+  padding: 10px 5px 10px;
   box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
   white-space: pre-wrap;
   outline: 0;
@@ -92,7 +93,7 @@ pre:not(:empty) {
  */
 
 #style-text {
-  -webkit-transform: translateX(98.5%) rotateY(-10deg);
+  -webkit-transform: translateX(99.5%) rotateY(-10deg);
   -webkit-transform-origin: right;
   max-height: 94.5%;
 }
@@ -109,8 +110,8 @@ body {
   -webkit-perspective: 1000px;
 }
 
-pre:not(#style-text) {
-  -webkit-transform: rotateY(10deg);
+.pre:not(#style-text) {
+  -webkit-transform: rotateY(10deg) translateY(2.5%);
   -webkit-transform-origin: left;
 }
 

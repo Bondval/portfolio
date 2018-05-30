@@ -6,6 +6,7 @@ import workText from 'raw-loader!./work.txt';
 import pgpText from 'raw-loader!./pgp.txt';
 import headerHTML from 'raw-loader!./header.html';
 import portfolioTeamplate from 'raw-loader!./portfolio-teamplate.html';
+// import ParticleNetwork from './particle-network.js';
 let styleText = [0, 1, 2, 3].map(function(i) { return require('raw-loader!./styles' + i + '.css'); });
 import preStyles from 'raw-loader!./prestyles.css';
 import replaceURLs from './lib/replaceURLs';
@@ -13,7 +14,7 @@ import {default as writeChar, writeSimpleChar, handleChar} from './lib/writeChar
 import getPrefix from './lib/getPrefix';
 
 // Vars that will help us get er done
-const isDev = window.location.hostname === 'localhost';
+const isDev = window.location.hostname === '';
 const speed = isDev ? 0 : 16;
 let style, styleEl, workEl, skipAnimationEl, pauseEl;
 let animationSkipped = false, done = false, paused = false;
