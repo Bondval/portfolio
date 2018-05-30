@@ -13,6 +13,10 @@ hr{
   color: #999;
 }
 
+ul li{
+  list-style-type: none;
+}
+
 .md .logo {
   background:green;
   width:100%;
@@ -39,7 +43,7 @@ hr{
 }
 
 .logo-container h4{
-  border: 1px solid #ccc;
+  border: 1px solid white;
   width: 50%;
   margin: 0 auto;
 }
@@ -67,7 +71,6 @@ hr{
   width: 30%;
   left: 3vw;
   margin-right: -50%;
-
 }
 
 .content {
@@ -92,6 +95,29 @@ hr{
   text-align: right;
 }
 
+.info-item_links{
+  
+  padding: 0;
+  font-size: 14px;
+}
+
+.info-item_links li{   
+   line-height: 2.2;
+}
+
+.info-item_links a{   
+  border-bottom: none;
+}
+
+.info-item_links span{   
+  color:#00abc2;
+}
+
+.info-item_links i{
+  font-size: 2em;
+  
+}
+
 .profile-item {
   line-height: 1.2;
 }
@@ -102,16 +128,52 @@ hr{
 
 .timeline {  
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1.5fr 5fr;
   grid-column-gap: 0;
 }
 
 .timeline .flag{
-  background-color: #333;
+  /* background-color: #333; */
   color: white;
   text-align: center;
   margin: auto;
   padding: 5px 10px;
+  position: relative;
+}
+
+.timeline .flag::before {
+  content: '▶';
+  color: #333;
+  right: -70px;
+  /* display: inline-block; */
+  position: relative;
+  font-size: 27px;
+  vertical-align: middle;
+  width: 100%;
+  text-indent: -8px;
+}
+
+.timeline>.timeline-item{
+  padding: 20px;
+  height: 100%;
+}
+
+.timeline>.timeline-item::before{
+  content: "●";
+  background-color: #333;
+  color: #333;
+  width: 1px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  left: -20px;
+  font-size: 28px;
+  line-height: 100%;
+  text-indent: -8px;
+}
+
+.timeline .flag p{
+  display: inline-block;
 }
 
 .circle-chart__circle {
@@ -164,7 +226,6 @@ hr{
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 /**
  * That's better.
  *
