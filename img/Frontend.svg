@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1020 183" style="enable-background:new 0 0 1020 183;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:60.7178px;}
+</style>
+<g>
+	<rect x="266.5" y="22.5" class="st0" width="485" height="136"/>
+	<path d="M750,24v133H268V24H750 M753,21H265v139h488V21L753,21z"/>
+</g>
+<g>
+	<line class="st1" x1="753" y1="90.5" x2="1003" y2="90.5"/>
+</g>
+<g>
+	<line class="st1" x1="15" y1="90.5" x2="265" y2="90.5"/>
+</g>
+<text transform="matrix(0.7111 0 0 1 333.6133 108.8213)" class="st2 st3">Frontend developer</text>
+</svg>

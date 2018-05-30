@@ -52,7 +52,7 @@ html {
 
 .pre {
   overflow: auto;
-  background: rgb(48, 48, 48);
+  background: rgb(48, 48, 48,0.8);
   border: 1px solid #ccc;
   max-height: 94.5%;
   width: 49%;
