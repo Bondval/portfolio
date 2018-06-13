@@ -31,14 +31,14 @@
  */
 
 html {
-  background: rgb(63, 82, 99);
+  background: url("img/demo-bg.jpg");
 }
 
 /***
  * Hold on...
  */
 
-.pre,  a {
+pre,  a {
   color: white;
 }
 
@@ -50,9 +50,9 @@ html {
  * The next step is the creation of a pleasant area for us to work with.
  */
 
-.pre {
+pre {
   overflow: auto;
-  background: rgb(48, 48, 48,0.8);
+  background: rgba(48, 48, 48, 0.8);
   border: 1px solid #ccc;
   max-height: 94.5%;
   width: 49%;
@@ -110,8 +110,8 @@ body {
   -webkit-perspective: 1000px;
 }
 
-.pre:not(#style-text) {
-  -webkit-transform: rotateY(10deg) translateY(2.5%);
+pre:not(#style-text) {
+  -webkit-transform: rotateY(10deg);
   -webkit-transform-origin: left;
 }
 

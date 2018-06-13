@@ -5,8 +5,6 @@ const md = Markdown.markdown.toHTML;
 import workText from 'raw-loader!./work.txt';
 import pgpText from 'raw-loader!./pgp.txt';
 import headerHTML from 'raw-loader!./header.html';
-import portfolioTeamplate from 'raw-loader!./portfolio-teamplate.html';
-// import ParticleNetwork from './particle-network.js';
 let styleText = [0, 1, 2, 3].map(function(i) { return require('raw-loader!./styles' + i + '.css'); });
 import preStyles from 'raw-loader!./prestyles.css';
 import replaceURLs from './lib/replaceURLs';
@@ -31,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 async function startAnimation() {
   try {
+    startBackgroundAnimation();
     await writeTo(styleEl, styleText[0], 0, speed, true, 1);
     await writeTo(workEl, workText, 0, speed, false, 1);
     await writeTo(styleEl, styleText[1], 0, speed, true, 1);
@@ -185,14 +184,20 @@ function createEventHandlers() {
   });
 }
 
+function startBackgroundAnimation(){
+  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+  particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+}
 //
 // Fire a listener when scrolling the 'work' box.
 //
 function createWorkBox() {
   if (workEl.classList.contains('flipped')) return;
-  workEl.innerHTML = '<div class="text">' + replaceURLs(workText) + '</div>' + `${portfolioTeamplate}`;
+  workEl.innerHTML = '<div class="text">' + replaceURLs(workText) + '</div>' +
+   `<div class="md">`+ replaceURLs(md(workText)) + `</div>`;
                      
-
   workEl.classList.add('flipped');
   workEl.scrollTop = 9999;
 
