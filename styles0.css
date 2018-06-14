@@ -6,16 +6,6 @@
  *
  */
 
-
- /**
- * Let's begin. We add a background animation to make it more fun.
- */
-
-#background-animation{
-  display:block;
-}
-
-
 /**
  * Add animation delay.
  * That didn't do much. But you'll see.
@@ -27,7 +17,7 @@
 
 /**
  * Black on white is really boring,
- * let's customize.
+ * let's customize,add background image with cool animation.
  */
 
 html {
